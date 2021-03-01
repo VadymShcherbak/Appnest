@@ -1,0 +1,639 @@
+@import url(reset.css);
+@import url(bootstrap-grid.css);
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #414040;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #575757;
+  padding-bottom: 20px;
+}
+p:last-child {
+  padding-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.play-btn, .apple-btn, button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #094b58;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.colortext {
+  color: #00cff1;
+}
+
+.light {
+  font-weight: 300;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  z-index: 1;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-self: center;
+}
+.header-menu a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  transition: color 0.4s ease;
+}
+.header-menu a:hover {
+  color: #00cff1;
+}
+
+.appnest {
+  min-height: 100vh;
+  background: url(img/section1/Background.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.appnest-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 270px;
+  padding-bottom: 150px;
+}
+
+.appnest-title {
+  max-width: 520px;
+}
+.appnest-title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.appnest-subtitle {
+  max-width: 625px;
+}
+.appnest-subtitle p {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.app-button img {
+  margin-right: 10px;
+  align-self: center;
+}
+
+.app-btn-text {
+  display: flex;
+  flex-direction: column;
+}
+.app-btn-text span {
+  text-align: left;
+  font-size: 9px;
+  font-weight: 300;
+}
+.app-btn-text .play-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.app-btn-text .apple-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.apple-btn {
+  display: inline-flex;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background-color: #24c657;
+  border: none;
+  transition: background-color 0.4s ease;
+}
+.apple-btn:hover {
+  background-color: #00cff1;
+}
+
+.play-btn {
+  display: inline-flex;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: background-color 0.4s ease;
+}
+.play-btn:hover {
+  background-color: #00cff1;
+  border-color: transparent;
+}
+
+.info-box {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  margin-bottom: 140px;
+  background: #f9f9f9;
+}
+.info-box .col-lg-3 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box-img {
+  background: #24c657;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-box-img::after {
+  content: "";
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-blue {
+  background: #00cff1;
+}
+
+.img-purple {
+  background: #ff45c4;
+}
+
+.img-orange {
+  background: #ff9d46;
+}
+
+.box-title {
+  font-size: 18px;
+}
+
+.info-box-wrapper {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 30px 30px rgba(80, 80, 80, 0.05);
+}
+
+.features {
+  margin-bottom: 140px;
+}
+.features .col-lg-6 {
+  margin-bottom: 50px;
+}
+.features .col-lg-6 img {
+  margin-bottom: 40px;
+}
+
+.features-head {
+  margin-bottom: 70px;
+}
+
+.understanding {
+  background: #f9f9f9;
+  margin-bottom: 140px;
+}
+.understanding .col-lg-5 {
+  align-self: center;
+}
+.understanding .col-lg-5 p {
+  margin-bottom: 20px;
+}
+.understanding .play-btn {
+  border-color: #282828;
+}
+.understanding .play-btn:hover {
+  border-color: transparent;
+}
+.understanding .play-text {
+  color: #282828;
+}
+.understanding .play-title {
+  color: #282828;
+}
+
+.understanding-img img {
+  max-width: none;
+}
+
+.screenshots {
+  margin-bottom: 140px;
+}
+
+.header {
+  text-align: center;
+  max-width: 465px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.screenshots-inner {
+  position: relative;
+  border: 1px solid #f3f3f3;
+  transition: box-shadow 0.6s ease;
+}
+.screenshots-inner > img {
+  width: 100%;
+}
+.screenshots-inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.screenshots-inner:hover {
+  box-shadow: 0px 0px 30px 30px rgba(80, 80, 80, 0.15);
+}
+
+.screenshots-img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background-color: #00cff1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.screenshots-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.screenshots-img:hover {
+  opacity: 0.9;
+}
+
+.overlay {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  margin-bottom: 140px;
+  background: url(img/section6/achievement-back.png) center no-repeat;
+  background-size: cover;
+}
+.overlay .col-xl-3 {
+  text-align: center;
+}
+
+.overlay-inner::after {
+  position: absolute;
+  top: -14px;
+  left: 55px;
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  border: 2px dashed #fff;
+  height: 210px;
+  width: 180px;
+  border-radius: 15px;
+  transform: rotate(-35deg);
+}
+
+.overlay-icon {
+  margin-bottom: 20px;
+}
+
+.overlay-number {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.overlay-text {
+  font-size: 21px;
+  line-height: 1;
+  color: #fff;
+}
+
+.feed {
+  margin-bottom: 200px;
+}
+
+.feed-inner {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.5s ease;
+}
+.feed-inner .client-name {
+  transition: color 0.4s ease;
+}
+.feed-inner p {
+  font-weight: 500;
+  font-style: italic;
+  color: inherit;
+}
+.feed-inner:hover {
+  box-shadow: 0px 40px 30px 30px rgba(80, 80, 80, 0.07);
+  border-color: transparent;
+}
+.feed-inner:hover .client-name {
+  color: #24c657;
+}
+
+.client-photo {
+  margin-bottom: 30px;
+}
+
+.client-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00cff1;
+}
+
+.company {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.table {
+  margin-bottom: 140px;
+}
+.table .col-lg-4 {
+  text-align: center;
+}
+
+.table-inner {
+  padding-top: 70px;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.5s ease;
+}
+.table-inner:hover {
+  box-shadow: 0px 40px 30px 30px rgba(80, 80, 80, 0.07);
+  border-color: transparent;
+}
+.table-inner h5 {
+  font-size: 24px;
+  color: #575757;
+}
+.table-inner ul {
+  padding-bottom: 50px;
+}
+.table-inner li {
+  font-family: "Raleway" sans-serif;
+  padding: 15px;
+}
+
+.table-btn button {
+  font-weight: 600;
+  background-color: #00cff1;
+  position: relative;
+  top: -30px;
+  transition: background-color 0.4s ease;
+}
+.table-btn button:hover {
+  background-color: #24c657;
+}
+
+.number {
+  font-size: 60px;
+  font-weight: bold;
+  color: #00cff1;
+}
+
+.month {
+  margin-bottom: 50px;
+}
+
+.download {
+  padding-top: 100px;
+  margin-bottom: 140px;
+  background: url(img/section8/download.png) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.download .col-lg-6 {
+  align-self: center;
+}
+.download .col-lg-5 {
+  align-self: center;
+}
+.download .col-lg-5 h4 {
+  color: #fff;
+}
+.download .col-lg-5 p {
+  font-size: 16px;
+  color: #fffefe;
+  margin-bottom: 60px;
+}
+.download .apple-btn {
+  color: #24c657;
+  background-color: #fff;
+  transition: background-color 0.4s ease;
+}
+.download .apple-btn:hover {
+  background-color: #00cff1;
+  color: #fff;
+}
+.download .apple-btn:hover .apple-text {
+  color: #fff;
+}
+.download .apple-btn .apple-text {
+  color: #24c657;
+}
+
+.download-img {
+  position: relative;
+  bottom: 50px;
+  left: 22px;
+}
+.download-img img {
+  max-width: none;
+}
+
+.col-img {
+  max-height: 470px;
+}
+
+.news {
+  margin-bottom: 140px;
+}
+
+.news-inner {
+  transition: box-shadow 0.4s ease;
+}
+.news-inner .news-name {
+  transition: color 0.4s ease;
+}
+.news-inner .news-btn {
+  transition: color 0.4s ease;
+}
+.news-inner:hover {
+  box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15);
+}
+.news-inner:hover .news-name {
+  color: #00cff1;
+}
+.news-inner:hover .news-btn a {
+  color: #00cff1;
+}
+
+.news-title {
+  border: 1px solid #eeeeee;
+  padding: 40px 20px;
+}
+
+.news-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 20px;
+}
+
+.news-post {
+  font-size: 14px;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+.news-text {
+  margin-bottom: 15px;
+}
+
+.news-btn a {
+  font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
+  color: #474747;
+  display: inline-flex;
+}
+.news-btn i {
+  font-size: 26px;
+  font-weight: 800;
+  margin-left: 10px;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .overlay-inner:after {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .header-btn {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .understanding-img img {
+    max-width: 100%;
+  }
+
+  .screenshots .col-lg-4 {
+    margin-bottom: 30px;
+  }
+
+  .feed .col-lg-4 {
+    margin-bottom: 35px;
+  }
+
+  .download-img {
+    bottom: 0;
+    left: 0;
+  }
+  .download-img img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .header-btn {
+    display: block;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .screenshots .col-lg-4 {
+    margin-bottom: 50px;
+  }
+
+  .news-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .app-button {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .app-button button {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
